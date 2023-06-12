@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import Animal from './components/Animal';
+import AnimalList from './AnimalList';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       {/* I want to list a bunch of animals ... */}
       {/* Each animal has its name and photo */}
       {/* When React renders this JSX, it simply cannot/does not */}
+      <AnimalList></AnimalList>
       <Animal></Animal>
       <Animal></Animal>
       <Animal></Animal>
