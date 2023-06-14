@@ -1,24 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
-import Animal from './components/Animal';
-import AnimalList from './AnimalList';
 
+import AnimalList from './components/AnimalList';
+  const listOfAnimals = [
+      {
+        name: "Violet",
+        species: "pitbull mix"
+      },
+      {
+        name: "Norman",
+        species: "puppy"
+      },
+      {
+        name: "Juni",
+        species: "poodle"
+      }
+  ];
 function App() {
+  // Comments outside of JSX (but still in JavaScript (aka JS that is not "returned")) can still be //'s.
   return (
     <section>
       <h1>The Sapphire Animal Adoption Agency</h1>
-      <h2>Animal Listings</h2>
-      {/* I want to list a bunch of animals ... */}
-      {/* Each animal has its name and photo */}
-      {/* When React renders this JSX, it simply cannot/does not */}
       <AnimalList></AnimalList>
-      <Animal></Animal>
-      <Animal></Animal>
-      <Animal></Animal>
-      <Animal></Animal>
-      <Animal></Animal>
     </section>
-    
   );
 }
 

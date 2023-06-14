@@ -1,16 +1,18 @@
-// The responsibility of this component is to be a reusable UI element that displays an Animal's
-// name
-// species
-// photo
 import './Animal.css';
+// The responsibility of this component is to be a reusable UI element that displays an Animal's
+// - name
+// - species
+// - photo (optional?) -- or a default!
+const Animal = (props) => {
 
-const Animal = () => {
-
-    return (<section>
-        <h3>Animal name: Loki</h3>
-        <p>Species: Cat</p>
-        <img src="http://placekitten.com/g/200/300" alt="Beijinho"></img>
+    return (
+    <section className="Animal">
+        <h3>Name: {props.name} </h3>
+        <p>Species: {props.species}</p>
+        <img src={props.photo} alt="Beijinho"></img> : "[No Photo]"
     </section>);
 };
+
+
 
 export default Animal;
